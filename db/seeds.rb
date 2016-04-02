@@ -1,7 +1,9 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+zoos_data = JSON.parse(File.read("db/zoos_data.json"))
+mammals_data = JSON.parse(File.read("db/mammals_data.json"))
+reptiles_data = JSON.parse(File.read("db/reptiles_data.json"))
+Zoo.destroy_all
+Mammal.destroy_all
+Reptile.destroy_all
+Zoo.create!(zoos_data)
+Mammal.create!(mammals_data)
+Reptile.create!(reptiles_data)
