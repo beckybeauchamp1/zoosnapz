@@ -1,14 +1,6 @@
 [{
-  "name": "Smithsonian National Zoological Park",
-  "hours_of_op": "Visitor Center & Exhibit Buildings:	9 a.m. to 6 p.m. (4 p.m. closing in winter*; 10 a.m. opening for Amazonia and the Bird House year-round)\n
-  Grounds:	8 a.m. to 7 p.m. (5 p.m. closing in winter*)\n
-  Concessions	9 a.m. to 5 p.m. (4:30 p.m. closing in winter*)\n
-  Rock Creek bike path	6 a.m. to 7 p.m.\n
-  *Winter hours: October 1-March 14.",
-  "location": "The Smithsonian's National Zoo is located in the heart of Northwest Washington, DC and spans 163 acres. There are several entrances to the Zoo and all are pedestrian and vehicle-friendly. The address of the zoo is as follows: \n
-  3001 Connecticut Ave NW\n
-  Washington, DC 20008",
-  "transpo_info": "The Zoo recommends that visitors use the Washington Metropolitan Area Transit Authority (WMATA) Trip Planner to navigate to the Zoo. The Zoo is accessible via Metro Bus and Metro Rail. Both the Woodley Park and Cleveland Park Metro stops are within walking distance of the Zoo.\n
-  Parking is available at the Zoo for a flat fee of $22 or FREE with some FONZ membership levels. Reserved parking at or near the Zoo can be purchased ahead of time through Parking Panda.\n
-  Capital Bikeshare has several stations for rental bikes near the Zoo. The Zoo recommends that visitors check the Capital Bikeshare website for locations and availability of rentals.",
+  "name":"Smithsonian National Zoological Park",
+  "hours_of_op":"Visitor Center & Exhibit Buildings: 9 a.m. to 6 p.m. (4 p.m. closing in winter*; 10 a.m. opening for Amazonia and the Bird House year-round)\n Grounds: 8 a.m. to 7 p.m. (5 p.m. closing in winter*)\n Concessions 9 a.m. to 5 p.m. (4:30 p.m. closing in winter*)\n Rock Creek bike path 6 a.m. to 7 p.m.\n *Winter hours: October 1-March 14.",
+  "location": "The Smithsonian's National Zoo is located in the heart of Northwest Washington, DC and spans 163 acres. There are several entrances to the Zoo and all are pedestrian and vehicle-friendly. The address of the zoo is as follows: \n 3001 Connecticut Ave NW\n Washington, DC 20008",
+  "transpo_info": "The Zoo recommends that visitors use the Washington Metropolitan Area Transit Authority (WMATA) Trip Planner to navigate to the Zoo. The Zoo is accessible via Metro Bus and Metro Rail. Both the Woodley Park and Cleveland Park Metro stops are within walking distance of the Zoo.\n Parking is available at the Zoo for a flat fee of $22 or FREE with some FONZ membership levels. Reserved parking at or near the Zoo can be purchased ahead of time through Parking Panda.\n Capital Bikeshare has several stations for rental bikes near the Zoo. The Zoo recommends that visitors check the Capital Bikeshare website for locations and availability of rentals."
 }]

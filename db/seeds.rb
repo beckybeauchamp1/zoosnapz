@@ -4,6 +4,6 @@ reptiles_data = JSON.parse(File.read("db/reptiles_data.json"))
 Zoo.destroy_all
 Mammal.destroy_all
 Reptile.destroy_all
-Zoo.create!(zoos_data)
-Mammal.create!(mammals_data)
-Reptile.create!(reptiles_data)
+zoo = Zoo.create!(zoos_data[0])
+mammals = zoo.mammals.create!(mammals_data)
+reptiles = zoo.reptiles.create!(reptiles_data)
