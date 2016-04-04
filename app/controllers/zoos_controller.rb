@@ -5,6 +5,14 @@ class ZoosController < ApplicationController
     end
   end
 
+  def index
+    @zoos = Zoo.all
+    respond_to do |format|
+      format.html
+      format.json{ render json: @zoos, status: :ok }
+    end
+  end
+
   def show
     render json: @zoo, status: :ok
   end
