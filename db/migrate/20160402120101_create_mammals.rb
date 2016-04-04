@@ -3,6 +3,7 @@ class CreateMammals < ActiveRecord::Migration
     create_table :mammals do |t|
       t.string :common_name
       t.string :scientific_name
+      t.string :zoo_location
       t.text :phys_descrip
       t.text :size
       t.text :geo_distribution

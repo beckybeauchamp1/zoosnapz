@@ -3,6 +3,7 @@ class CreateReptiles < ActiveRecord::Migration
     create_table :reptiles do |t|
       t.string :common_name
       t.string :scientific_name
+      t.string :zoo_location
       t.text :phys_descrip
       t.text :size
       t.text :geo_distribution

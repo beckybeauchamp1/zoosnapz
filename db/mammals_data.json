@@ -1,6 +1,7 @@
 [{
   "common_name": "Giant Panda",
   "scientific_name": "Ailuropoda melanoleuca",
+  "zoo_location": "Giant Panda Habitat",
   "phys_descrip": "The giant panda, a black-and-white bear, has a body typical of bears. It has black fur on ears, eye patches, muzzle, legs, and shoulders. The rest of the animal's coat is white. Although scientists do not know why these unusual bears are black and white, some speculate that the bold coloring provides effective camouflage into their shade-dappled snowy and rocky surroundings. The panda's thick, wooly coat keeps it warm in the cool forests of its habitat. Giant pandas have large molar teeth and strong jaw muscles for crushing tough bamboo. Many people find these chunky, lumbering animals to be cute, but giant pandas can be as dangerous as any other bear.",
   "size": "About the size of an American black bear, giant pandas stand between two and three feet tall at the shoulder (on all four legs), and reach four to six feet long. Males are larger than females, weighing up to 250 pounds in the wild. Females rarely reach 220 pounds.",
   "geo_distribution": "Giant pandas live in a few mountain ranges in central China, in Sichuan, Shaanxi, and Gansu provinces. They once lived in lowland areas, but farming, forest clearing, and other development now restrict giant pandas to the mountains. Giant pandas live in broadleaf and coniferous forests with a dense understory of bamboo, at elevations between 5,000 and 10,000 feet. Torrential rains or dense mist throughout the year characterizes these forests, often shrouded in heavy clouds.",
@@ -18,6 +19,7 @@
 },{
   "common_name": "Red Panda",
   "scientific_name": "Ailurus fulgens",
+  "zoo_location": "Asia Trail",
   "phys_descrip": "Long, coarse guard hairs cover the entire body and there is a soft, dense, woolly undercoat. Their unique coloring appears cryptic in the canopy of fir trees where branches are covered with clumps of reddish-brown moss and white lichens. Their face is predominantly white with reddish brown 'tear tracks' extending from the eye to the corner of the mouth. Red pandas have long, bushy tails that help give this arboreal species balance. Their tails are marked with alternating red and buff rings.\n
   Red pandas are the only Asian carnivore to have dense hair covering their feet; the nearest parallel is seen in the polar bear. Red pandas have five toes that are widely separated and semi-retractable claws. Their ankles are extremely flexible and rotate when climbing headfirst down a tree trunk. Red pandas climb well, using trees for shelter, to escape predators and sunbathe in the winter. They share the giant panda's 'thumb' – a modified wrist bone – that is used to help grasp bamboo when feeding.",
   "size": "Adult red pandas weigh between eight and 14 pounds and are 22 to 25 inches in length plus a tail of 15 to 19 inches long. Males and females look alike.",
@@ -36,6 +38,7 @@
 },{
   "common_name": "Orangutan",
   "scientific_name": "Pongo pygmaeus (Bornean) and Pongo abelii (Sumatran)",
+  "zoo_location": "Great Apes & O Line (Orangutan Transit System)",
   "phys_descrip": "These orangish-red-haired great apes have long arms and curved hands and feet, which they put to good use when traversing the treetops. Males tend to have longer hair than females and are about two times larger than females. Some males develop disc-like cheek pads. Male orangutans exhibit bimaturism, existing in two adult male morphs: flanged and unflanged. Flanged males have highly developed throat sacs and large, disc-like cheek pads.\n
   Both sexes have throat pouches that make their calls resonate through the forest. The males' pouches are more developed. Orangutans crush tough foliage and hard-shelled nuts with their strong teeth and jaws. Two species exist: P. pygmaeus of Borneo, and the Sumatran species, P. abelii. Bornean orangutans are typically darker and stockier than Sumatran orangutans, which tend to have longer hair with more pronounced beards.",
   "size": "Orangutans are Asia's largest primates, and males are larger than females. Males stand about four and a half feet tall and weigh 130 to 200 pounds. Females stand about four feet tall and weigh 90 to 110 pounds.",
@@ -54,6 +57,7 @@
 },{
   "common_name": "Asian Elephant",
   "scientific_name": "Elephas maximus",
+  "zoo_location": "Elephan Trails & Elephant Outpost",
   "phys_descrip": "Asian elephants are huge gray animals inhabiting Asian tropical forests. Their gray coloration conceals them in their shady habitat. Elephants' trunks, unique among living mammals, are versatile, enabling them to reach the ground, manipulate tiny objects or tear down huge tree limbs, squirt water over their backs or into their mouths, or blow dirt onto their backs during dust baths. Female Asian elephants usually lack visible tusks as do males in some populations, such as those in northeast India. Wide, padded feet enable them to walk quietly. Large, flappable ears help these huge animals cool off, although elephants often must retreat to the shade or water during the hottest part of the day.",
   "size": "Asian elephants grow up to 21 feet long, stand up to 10 feet tall, and weigh up to 11,000 pounds. Females reach around eight and a half feet tall and weigh less than males. Despite their size, elephants are able to walk silently.",
   "geo_distribution": "Asian elephants live in large blocks of forest near water sources and grasslands, habitat that has been greatly reduced in the last half century. They inhabit India, Sri Lanka, Myanmar (Burma), Indonesia, Thailand, Cambodia, Vietnam, Laos, Malaysia, Nepal, Bangladesh, and southern China.",
@@ -70,6 +74,7 @@
 },{
   "common_name": "African Lion",
   "scientific_name": "Panthera leo",
+  "zoo_location": "Great Cats",
   "phys_descrip": "Lions have strong, compact bodies and powerful forelegs, teeth, and jaws for pulling down and killing prey. Their coats are yellow-gold. Adult males have shaggy manes that range in color from blond to reddish-brown to black, and length. The length and color of the mane is believed to be determined by such factors as age, genetics, and hormones. Young lions have light spotting on their coats that will disappear as they grow up.",
   "size": "Male lions grow larger than females, reaching up to ten feet long (females reach up to nine feet long), plus a two- to three-foot-long tail. Male lions weigh from 330 to 550 pounds; females weigh 265 to 395 pounds. Lions stand between three and a half and four feet tall at the shoulder.",
   "geo_distribution": "Except for a small population that hangs on in the dry Gir Forest of northwest India, lions now live only in Africa. They are found from the Sahara's southern fringe to northern South Africa, but are absent from equatorial areas dominated by moist tropical forest.",
@@ -88,6 +93,7 @@
 },{
   "common_name": "American Bison",
   "scientific_name": "Bison bison",
+  "zoo_location": "American Bison Area",
   "phys_descrip": "A thick coat of long, dark hair covers a bison’s head, neck, forelegs, and front parts of the body. Much shorter hair covers the rear part of its body. Adult bulls sport black beards about a foot long. Their shaggy head is the most heavily insulated part of their body, adapted to withstand blizzards as the animal stands facing into the wind. They shed their heavy coats in the spring as the animals roll to loosen the hair, which falls off in clumps.",
   "size": "A mature bull can stand 5.5 to 6.5 feet (1.9 meters) tall at the hump and nine to 12.5 feet (2.7 to 3.8 meters) long. Females are normally smaller, at seven to ten feet in length (2.2 to 3.2 meters) and five feet high at the hump (1.5 meters). Bison can weigh 1,800 to 2,400 pounds (816 to 1,088 kg).",
   "geo_distribution": "Bison once ranged all across North America, from New York to California and from Texas to Alaska. Now, they live primarily in managed herds in national and state parks in both the United States and Canada. Parks and refuges manage conservation herds, while government agencies monitor free-ranging herds. The two most prominent herds are found in Yellowstone Park in Wyoming, and Wood Buffalo Park in Northwest Territory. Conservation herds cover only about one percent of the bison’s original range.",
