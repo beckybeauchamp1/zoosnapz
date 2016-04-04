@@ -1,12 +1,12 @@
 class MammalsController < ApplicationController
   before_action do
     if params[:id]
-      @zoo = Zoo.find(params[:id])
       @mammal = Mammal.find(params[:id])
     end
   end
 
   def index
+    @zoo = Zoo.find(params[:zoo_id])
     @mammals = @zoo.mammals
     respond_to do |format|
       format.html

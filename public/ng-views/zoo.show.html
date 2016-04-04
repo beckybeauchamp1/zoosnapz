@@ -11,19 +11,3 @@
 <p>{{ZooShowVM.zoo.hours_of_op}}</p>
 <p>{{ZooShowVM.zoo.location}}</p>
 <p>{{ZooShowVM.zoo.transpo_info}}</p>
-
-<a data-ui-sref="reptileIndex">Reptiles</a>
-<a data-ui-sref="mammalIndex">Mammals</a>
-
-<div id="map"></div>
-    <script>
-      function initMap() {
-        var mapDiv = document.getElementById('map');
-        var map = new google.maps.Map(mapDiv, {
-          center: {lat: 38.9296198, lng: -77.0519731},
-          zoom: 15
-        });
-      }
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
-        async defer></script>

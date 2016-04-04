@@ -32,7 +32,7 @@
     })
     .state("mammalsIndex", {
       url: "/mammals",
-      templateUrl: "/ng-views/mammals.index.html",
+      template: "I am the mammals index template",
       controller: "MammalIndexController",
       controllerAs: "MammalIndexVM"
     });
