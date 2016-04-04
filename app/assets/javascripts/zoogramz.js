@@ -24,17 +24,17 @@
       url: "/",
       template: "I am working"
     })
+    .state("mammalsIndex", {
+      url: "/:id/mammals",
+      templateUrl: "/ng-views/mammals.index.html",
+      controller: "MammalIndexController",
+      controllerAs: "MammalIndexVM"
+    })
     .state("zooShow", {
       url: "/:id",
       templateUrl: "/ng-views/zoo.show.html",
       controller: "ZooShowController",
       controllerAs: "ZooShowVM"
-    })
-    .state("mammalsIndex", {
-      url: "/mammals",
-      template: "I am the mammals index template",
-      controller: "MammalIndexController",
-      controllerAs: "MammalIndexVM"
     });
   }
 })();

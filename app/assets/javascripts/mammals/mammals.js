@@ -15,7 +15,7 @@
   ]);
 
   function MammalFactoryFunction($resource){
-    var MammalFactory = $resource("/mammals/:id.json", {}, {
+    var MammalFactory = $resource("/zoos/1/mammals.json", {}, {
       update: {method: "PUT"}
     });
     MammalFactory.all = MammalFactory.query();
