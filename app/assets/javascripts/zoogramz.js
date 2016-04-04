@@ -18,8 +18,8 @@
   function RouterFunction($stateProvider){
     $stateProvider
     .state("zooShow", {
-      url: "/zoo/:id",
-      templateUrl: "app/views/zoos/show.html.erb",
+      url: "/zoos/:id",
+      templateUrl: "ng-views/zoos.show.html",
       controller: "ZooShowController",
       controllerAs: "ZooShowVM"
     })
