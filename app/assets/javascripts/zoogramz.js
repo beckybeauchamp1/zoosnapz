@@ -10,6 +10,7 @@
   .module("Zoogramz", [
     "ui.router",
     "zoos"
+    "reptiles"
   ])
   .config([
     "$stateProvider",
@@ -27,6 +28,12 @@
       templateUrl: "/ng-views/zoo.show.html",
       controller: "ZooShowController",
       controllerAs: "ZooShowVM"
+    })
+    .state("reptileIndex", {
+      url: "/reptileIndex",
+      templateUrl: "ng-views/reptile.index.html",
+      controller: "ReptileIndexController",
+      controllerAs: "ReptileIndexVM"
     })
   }
 })();
