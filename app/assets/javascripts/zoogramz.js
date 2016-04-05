@@ -2,6 +2,7 @@
 //= require angular-resource
 //= require ui-router
 //= require zoos/zoos
+//= require mammals/mammals
 
 "use strict";
 
@@ -9,7 +10,8 @@
   angular
   .module("Zoogramz", [
     "ui.router",
-    "zoos"
+    "zoos",
+    "mammals"
   ])
   .config([
     "$stateProvider",
@@ -22,11 +24,17 @@
       url: "/",
       template: "I am working"
     })
+    .state("mammalsIndex", {
+      url: "/:id/mammals",
+      templateUrl: "/ng-views/mammals.index.html",
+      controller: "MammalIndexController",
+      controllerAs: "MammalIndexVM"
+    })
     .state("zooShow", {
       url: "/:id",
       templateUrl: "/ng-views/zoo.show.html",
       controller: "ZooShowController",
       controllerAs: "ZooShowVM"
-    })
+    });
   }
 })();
