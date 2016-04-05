@@ -12,6 +12,11 @@
   .controller("MammalIndexController", [
     "MammalFactory",
     MammalIndexControllerFunction
+  ])
+  .controller("MammalShowController", [
+    "MammalFactory",
+    "$stateParams",
+    MammalShowControllerFunction
   ]);
 
   function MammalFactoryFunction($resource){
@@ -27,4 +32,17 @@
     MammalIndexVM.mammals = MammalFactory.all;
     MammalIndexVM.newMammalFactory = new MammalFactory();
   }
+
+  function MammalShowControllerFunction(MammalFactory, $stateParams){
+    var MammalShowVM = this;
+    MammalFactory.all.$promise.then(function(){
+      MammalFactory.all.forEach(function(mammal){
+        if(mammal.id == $stateParams.id){
+          MammalShowVM.mammal = mammal;
+        }
+      })
+    })
+
+  }
+
 })();
