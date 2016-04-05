@@ -15,15 +15,15 @@
   ]);
 
   function ReptileFactoryFunction($resource){
-    var Reptile = $resource("/reptiles/:id.json", {}, {
+    var Reptile = $resource("/zoos/1/reptiles/:id.json", {}, {
       update: {method: "PUT"}
     });
     Reptile.all = Reptile.query();
-    return Reptile
+    return Reptile;
   }
 
   function ReptileIndexControllerFunction(ReptileFactory){
     var ReptileIndexVM = this;
-    ReptileIndexVM.reptiles = Reptile.all
+    ReptileIndexVM.reptiles = ReptileFactory.all
   }
 })();
