@@ -38,6 +38,12 @@
       controller: "ReptileIndexController",
       controllerAs: "ReptileIndexVM"
     })
+    .state("reptileShow", {
+      url: "/reptiles/:id",
+      templateUrl: "/ng-views/reptile.show.html",
+      controller: "ReptileShowController",
+      controllerAs: "ReptileShowVM"
+    })
     .state("zooShow", {
       url: "/:id",
       templateUrl: "/ng-views/zoo.show.html",
