@@ -12,6 +12,11 @@
   .controller("ReptileIndexController", [
     "ReptileFactory",
     ReptileIndexControllerFunction
+  ])
+  .controller("ReptileShowController", [
+    "ReptileFactory",
+    "$stateParams",
+    ReptileShowControllerFunction
   ]);
 
   function ReptileFactoryFunction($resource){
@@ -25,5 +30,10 @@
   function ReptileIndexControllerFunction(ReptileFactory){
     var ReptileIndexVM = this;
     ReptileIndexVM.reptiles = ReptileFactory.all
+  }
+
+  function ReptileShowControllerFunction(ReptileFactory, $stateParams){
+    var ReptileShowVM = this;
+    ReptileShowVM.reptiles = ReptileFactory.get({id: $stateParams.id})
   }
 })();
