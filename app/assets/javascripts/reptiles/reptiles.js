@@ -34,6 +34,12 @@
 
   function ReptileShowControllerFunction(ReptileFactory, $stateParams){
     var ReptileShowVM = this;
-    ReptileShowVM.reptiles = ReptileFactory.get({id: $stateParams.id})
+    ReptileFactory.all.$promise.then(function(){
+      ReptileFactory.all.forEach(function(reptile){
+        if(reptile.id == $stateParams.id){
+          ReptileShowVM.reptile = reptile;
+        }
+      })
+    })
   }
 })();
