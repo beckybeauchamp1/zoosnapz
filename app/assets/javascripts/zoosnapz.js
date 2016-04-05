@@ -9,7 +9,7 @@
 
 (function(){
   angular
-  .module("Zoogramz", [
+  .module("Zoosnapz", [
     "ui.router",
     "zoos",
     "reptiles",
