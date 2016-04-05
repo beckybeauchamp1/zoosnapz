@@ -43,6 +43,11 @@
       templateUrl: "/ng-views/reptile.show.html",
       controller: "ReptileShowController",
       controllerAs: "ReptileShowVM"
+    .state("mammalsShow", {
+      url: "/mammals/:id",
+      templateUrl: "/ng-views/mammals.show.html",
+      controller: "MammalShowController",
+      controllerAs: "MammalShowVM"
     })
     .state("zooShow", {
       url: "/:id",
