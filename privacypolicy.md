@@ -28,7 +28,7 @@ You may opt out of any future contacts from us at any time. You can take the fol
 
 We take precautions to protect your information, but no sensitive information will be collected via our website, which is primarily informational in nature.
 
-# Updates
+## Updates
 
 Our Privacy Policy may change from time to time and all updates will be posted on this page.
 
