@@ -14,6 +14,14 @@
     "$stateParams",
     ZooShowControllerFunction
   ])
+  .directive("animalsShow", function(){
+    return {
+      templateUrl: "/ng-views/_animals_show.html",
+      scope: {
+        animal: '='
+      }
+    };
+  })
 
   function ZooFactoryFunction($resource){
     var ZooFactory = $resource("/zoos/:id.json", {}, {
