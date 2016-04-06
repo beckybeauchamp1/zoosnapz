@@ -1,9 +1,3 @@
-<style>
-img {
-  max-width: 15em;
-}
-</style>
-
 <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -31,8 +25,7 @@ img {
 <input type="text" class="form-control" placeholder="Filter by animal name" data-ng-model="MammalIndexVM.filter_on" />
 </div>
 
-<div class="animals-grid" data-ng-repeat="mammal in MammalIndexVM.mammals">
-  <div class="animal-images">
-    <img src="{{mammal.image_one}}" alt="">
-    <a href="zoos#/mammals/{{mammal.id}}">{{mammal.common_name}}</a>
-  </div>
+<div class="animals-grid" data-ng-repeat="mammal in MammalIndexVM.mammals | filter: MammalIndexVM.filter_on">
+    <a href="zoos#/mammals/{{mammal.id}}"><img class="square animals-images" data-ng-src="{{mammal.image_one}}" alt="{{mammal.common_name}}"></a>
+    <!-- <a href="zoos#/mammals/{{mammal.id}}">{{mammal.common_name}}</a> -->
+</div>
