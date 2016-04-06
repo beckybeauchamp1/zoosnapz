@@ -19,6 +19,11 @@ h2 {
   margin: 0 auto;
 }
 
+.square-img {
+  max-width: 15em;
+  border-radius: 10px;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
