@@ -21,7 +21,9 @@
   </nav>
 
 <h2>Reptiles, Reptiles, Reptiles!!!</h2>
-
-<div data-ng-repeat="reptile in ReptileIndexVM.reptiles">
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Filter by animal name" data-ng-model="ReptileIndexVM.filter_on" />
+</div>
+<div data-ng-repeat="reptile in ReptileIndexVM.reptiles | filter: ReptileIndexVM.filter_on">
   <a href="/zoos#/reptiles/{{reptile.id}}">{{reptile.common_name}}</a>
 </div>
