@@ -4,6 +4,7 @@
 //= require zoos/zoos
 //= require reptiles/reptiles
 //= require mammals/mammals
+//= require lightwidget
 
 "use strict";
 
