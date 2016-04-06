@@ -21,7 +21,10 @@
   </nav>
 
 <h2>Here is a list of all the Mammals</h2>
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Filter by animal name" data-ng-model="MammalIndexVM.filter_on" />
+</div>
 
-<div data-ng-repeat="mammal in MammalIndexVM.mammals">
+<div data-ng-repeat="mammal in MammalIndexVM.mammals | filter: MammalIndexVM.filter_on">
   <a href="zoos#/mammals/{{mammal.id}}">{{mammal.common_name}}</a>
 </div>
