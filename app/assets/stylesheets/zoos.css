@@ -109,3 +109,7 @@ h2 {
 img.square {
   max-width: 15em;
 }
+
+td > p {
+  font-size: 1.1em;
+}
