@@ -16,9 +16,9 @@
   ])
   .directive("animalsIndex", function(){
     return {
-      template: "<img src='{{attribute}}'>",
+      templateUrl: "/ng-views/_animals_index.html",
       scope: {
-        attribute: '@'
+        animal: '='
       }
     };
   })
