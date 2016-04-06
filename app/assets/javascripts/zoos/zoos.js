@@ -16,7 +16,10 @@
   ])
   .directive("animalsIndex", function(){
     return {
-      template: "<h1>Do I Appear?</h1>"
+      template: "<img src='{{attribute}}'>",
+      scope: {
+        attribute: '@'
+      }
     };
   })
 

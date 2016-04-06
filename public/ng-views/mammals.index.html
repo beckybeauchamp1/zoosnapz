@@ -20,7 +20,6 @@
     </div>
   </nav>
 
-<animals-index></animals-index>
 
 <h2>Explore Mammals</h2>
 <div class="form-group">
@@ -29,7 +28,7 @@
 
 <div class="animals-grid">
   <div class="animals-row" data-ng-repeat="mammal in MammalIndexVM.mammals | filter: MammalIndexVM.filter_on">
-      <a href="zoos#/mammals/{{mammal.id}}"><img class="square animals-images" data-ng-src="{{mammal.image_one}}" alt="{{mammal.common_name}}"></a>
+      <a class="square" animals-index data-attribute="{{mammal.image_one}}" href="zoos#/mammals/{{mammal.id}}"><img class="square animals-images" data-ng-src="{{mammal.image_one}}" alt="{{mammal.common_name}}"></a>
       <!-- <a href="zoos#/mammals/{{mammal.id}}">{{mammal.common_name}}</a> -->
   </div>
 </div>
