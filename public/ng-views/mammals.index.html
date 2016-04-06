@@ -28,6 +28,5 @@
 <div class="animals-grid">
   <div class="animals-row" data-ng-repeat="mammal in MammalIndexVM.mammals | filter: MammalIndexVM.filter_on">
       <a data-ui-sref="mammalsShow({id: mammal.id})"><img class="square animals-images" data-ng-src="{{mammal.image_one}}" alt="{{mammal.common_name}}"></a>
-      <!-- <a href="zoos#/mammals/{{mammal.id}}">{{mammal.common_name}}</a> -->
   </div>
 </div>
