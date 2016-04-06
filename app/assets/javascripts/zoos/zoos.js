@@ -14,6 +14,11 @@
     "$stateParams",
     ZooShowControllerFunction
   ])
+  .directive("animalsIndex", function(){
+    return {
+      template: "<h1>Do I Appear?</h1>"
+    };
+  })
 
   function ZooFactoryFunction($resource){
     var ZooFactory = $resource("/zoos/:id.json", {}, {
