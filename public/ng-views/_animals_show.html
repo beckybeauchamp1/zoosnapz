@@ -1,10 +1,12 @@
 <h2>{{animal.common_name}}</h2>
-<img class="square" src="{{animal.image_one}}" alt="{{animal.common_name}}" class="square-img">
-<img class="square" src="{{animal.image_two}}" alt="{{animal.common_name}}" class="square-img">
+<div class="animals-grid">
+  <img class="square" src="{{animal.image_one}}" alt="{{animal.common_name}}">
+  <img class="square" src="{{animal.image_two}}" alt="{{animal.common_name}}">
+</div>
 <h4><strong>Scientific Name: </strong>{{animal.scientific_name}}</h4>
 <h4><strong>Location in Zoo: </strong>{{animal.zoo_location}}</h4>
-<h4>Physical Description:</h4>
-<p>{{animal.phys_descrip}}</p>
+<h4 data-ng-click="visible=!visible">Physical Description:</h4>
+<p data-ng-show="visible">{{animal.phys_descrip}}</p>
 <h4>Size:</h4>
 <p>{{animal.size}}</p>
 <h4>Geographic Distribution:</h4>
@@ -23,3 +25,4 @@
 <p>{{animal.behavior}}</p>
 <h4>Fun Facts:</h4>
 <p>{{animal.fun_facts}}</p>
+<a href="{{animal.video}}" role='button' class='btn btn-primary' target='_blank'>Video</a>
