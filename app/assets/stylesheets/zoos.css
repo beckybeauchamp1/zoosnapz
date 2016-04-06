@@ -77,6 +77,11 @@ h2 {
 }
 
 .animals-grid {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.animals-row {
   display: -webkit-flex;
   display: inline-flex;;
   flex-flow: row wrap;
@@ -87,6 +92,7 @@ h2 {
   justify-content: center;
   -webkit-align-content: center;
   align-content: center;
+  text-align: center;
 }
 
 .animals-images {
