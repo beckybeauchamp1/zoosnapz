@@ -19,6 +19,12 @@ h2 {
   margin: 0 auto;
 }
 
+.lightwidget-widget {
+  width: 100%;
+  border: 0;
+  overflow: hidden;
+}
+
 .square-img {
   max-width: 15em;
   border-radius: 10px;
