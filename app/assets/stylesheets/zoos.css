@@ -74,3 +74,18 @@ h2 {
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
+
+.animals-grid {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animals-images {
+  flex: 1 0 5px;
+  box-sizing: border-box;
+  padding: 0 10px 10px;
+}
+
+img {
+  max-width: 15em;
+}
