@@ -24,6 +24,9 @@
 <div class="form-group">
 <input type="text" class="form-control" placeholder="Filter by animal name" data-ng-model="ReptileIndexVM.filter_on" />
 </div>
-<div data-ng-repeat="reptile in ReptileIndexVM.reptiles | filter: ReptileIndexVM.filter_on">
-  <a href="/zoos#/reptiles/{{reptile.id}}">{{reptile.common_name}}</a>
+
+<div class="animals-grid">
+  <div class="animals-row" data-ng-repeat="reptile in ReptileIndexVM.reptiles | filter: ReptileIndexVM.filter_on">
+    <a data-ui-sref="reptileShow({id: reptile.id})"><img class="square animals-images" data-ng-src="{{reptile.image_one}}" alt="{{reptile.common_name}}"></a>
+  </div>
 </div>
