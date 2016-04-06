@@ -1,6 +1,6 @@
-#User Stories for ZoogramZ App
+#User Stories for ZoosnapZ App
 
-* As a user, I want see a landing page with links to how to ZoogramZ, zoo info, and animal categories so I can see what is available in the app.
+* As a user, I want see a landing page with links to how to ZoosnapZ, zoo info, and animal categories so I can see what is available in the app.
 * As a user, I want to see a feed of popular Instagram images on the landing page based on the relevant hashtag(s).
 * As a user, when I click on zoo info, I want to see relevant zoo information.
 * As a user, I want to click on a animal category which will take me to a view page that lists all animals in that category.
