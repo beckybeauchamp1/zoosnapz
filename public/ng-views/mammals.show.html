@@ -1,9 +1,3 @@
-<style>
-  img {
-    max-width: 15em;
-  }
-</style>
-
 <!-- Fixed navbar -->
   <nav class="navbar navbar-default navbar-fixed-top">
     <div class="container">
@@ -20,41 +14,9 @@
         <ul class="nav navbar-nav navbar-right">
           <li><a href="zoos#/1">National Zoo</a></li>
           <li><a href="zoos#/1/mammals">Mammals<span class="sr-only">(Current Mammals Page)</span></a></li>
-          <!-- <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Mammals <span class="caret"></span></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-            </ul>
-          </li> -->
         </ul>
       </div><!--/.nav-collapse -->
     </div>
   </nav>
 
-<h2>{{MammalShowVM.mammal.common_name}}</h2>
-<img src="{{MammalShowVM.mammal.image_one}}" alt="{{MammalShowVM.mammal.common_name}}" class="square-img">
-<img src="{{MammalShowVM.mammal.image_two}}" alt="{{MammalShowVM.mammal.common_name}}" class="square-img">
-<h4><strong>Scientific Name: </strong>{{MammalShowVM.mammal.scientific_name}}</h4>
-<h4><strong>Location in Zoo: </strong>{{MammalShowVM.mammal.zoo_location}}</h4>
-<h4>Physical Description:</h4>
-<p>{{MammalShowVM.mammal.phys_descrip}}</p>
-<h4>Size:</h4>
-<p>{{MammalShowVM.mammal.size}}</p>
-<h4>Geographic Distribution:</h4>
-<p>{{MammalShowVM.mammal.geo_distribution}}</p>
-<h4>Status:</h4>
-<p>{{MammalShowVM.mammal.status}}</p>
-<h4>Natural Diet:</h4>
-<p>{{MammalShowVM.mammal.natural_diet}}</p>
-<h4>Zoo Diet:</h4>
-<p>{{MammalShowVM.mammal.zoo_diet}}</p>
-<h4>Reproduction:</h4>
-<p>{{MammalShowVM.mammal.reproduction}}</p>
-<h4>Life Span:</h4>
-<p>{{MammalShowVM.mammal.life_span}}</p>
-<h4>Behavior:</h4>
-<p>{{MammalShowVM.mammal.behavior}}</p>
-<h4>Fun Facts:</h4>
-<p>{{MammalShowVM.mammal.fun_facts}}</p>
+<animals-show data-animal="MammalShowVM.mammal"></animals-show>
