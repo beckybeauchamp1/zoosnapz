@@ -2,6 +2,9 @@
   <div class="animals-grid">
     <img class="square" src="{{animal.image_one}}" alt="{{animal.common_name}}">
     <img class="square" src="{{animal.image_two}}" alt="{{animal.common_name}}">
+    <div>
+      <a href="{{animal.video}}" role='button' class='btn btn-primary' target='_blank'>Video</a>
+    </div>
   </div>
 
 <table class="table table-striped">
@@ -72,11 +75,6 @@
       <td>
         <h4 data-ng-click="fun=!fun">Fun Facts <span class="glyphicon glyphicon-plus" aria-hidden="true"></span></h4>
         <p data-ng-show="fun">{{animal.fun_facts}}</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <a href="{{animal.video}}" role='button' class='btn btn-primary' target='_blank'>Video</a>
       </td>
     </tr>
   </tbody>
