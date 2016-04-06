@@ -1,11 +1,21 @@
-<h2>Welcome to the National Zoo</h2>
-<!-- <h2>{{ZooShowVM.zoo.name}}</h2>
-<p>{{ZooShowVM.zoo.hours_of_op}}</p>
-<p>{{ZooShowVM.zoo.location}}</p>
-<p>{{ZooShowVM.zoo.transpo_info}}</p> -->
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ZoosnapZ</a>
+    </div>
+  </div>
+</nav>
 
-<!-- Trigger/Open The Modal -->
-<button id="myBtn">More Info</button>
+<h2>Welcome to the National Zoo</h2>
+
+<div id="buttonrow">
+  <a href="zoos#/1/mammals" class="btn btn-warning" role="button">Mammals</a>
+  <a href="zoos#/1/reptiles" class="btn btn-success" role="button">Reptiles</a>
+
+  <!-- Trigger/Open The Modal -->
+  <button class="btn btn-primary" id="myBtn">More Info</button>
+</div>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -55,3 +65,11 @@ window.onclick = function(event) {
   }
 }
 </script>
+
+<!-- SnapWidget -->
+<script src="http://snapwidget.com/js/snapwidget.js"></script>
+<iframe src="http://snapwidget.com/in/?u=c21pdGhzb25pYW56b298aW58MTI1fDN8M3x8bm98NXxub25lfG9uU3RhcnR8eWVzfHllcw==&ve=050416" title="Instagram Widget" class="snapwidget-widget" allowTransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%;"></iframe>
+
+<!-- Twitter Widgets -->
+<a class="twitter-timeline" href="https://twitter.com/NationalZoo" data-widget-id="717536372853182464">Tweets by @NationalZoo</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>

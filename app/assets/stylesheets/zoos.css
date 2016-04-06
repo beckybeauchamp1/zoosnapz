@@ -2,6 +2,23 @@
 *= require bootstrap
 */
 
+body {
+  margin-top: 5em;
+}
+
+h2 {
+  text-align: center;
+}
+
+.btn {
+  margin: 5px 5px 15px 0px;
+}
+
+#buttonrow {
+  text-align: center;
+  margin: 0 auto;
+}
+
 /* The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
@@ -52,4 +69,3 @@
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
     to {top: 0; opacity: 1}
-}
