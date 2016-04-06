@@ -27,10 +27,12 @@ img {
   </nav>
 
 <h2>Here is a list of all the Mammals</h2>
+<div class="form-group">
+<input type="text" class="form-control" placeholder="Filter by animal name" data-ng-model="MammalIndexVM.filter_on" />
+</div>
 
 <div class="animals-grid" data-ng-repeat="mammal in MammalIndexVM.mammals">
   <div class="animal-images">
     <img src="{{mammal.image_one}}" alt="">
     <a href="zoos#/mammals/{{mammal.id}}">{{mammal.common_name}}</a>
   </div>
-</div>
