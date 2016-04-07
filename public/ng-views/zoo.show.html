@@ -9,61 +9,24 @@
 
 <h2>Welcome to the National Zoo</h2>
 
-<div id="buttonrow">
-  <a href="zoos#/1/mammals" class="btn btn-warning" role="button">Mammals</a>
-  <a href="zoos#/1/reptiles" class="btn btn-success" role="button">Reptiles</a>
-
-  <!-- Trigger/Open The Modal -->
-  <button class="btn btn-primary" id="myBtn">More Info</button>
-</div>
-
-<!-- The Modal -->
-<div id="myModal" class="modal">
-
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
-      <span class="close">×</span>
-      <h2>{{ZooShowVM.zoo.name}}</h2>
-    </div>
-    <div class="modal-body">
-      <h4>Hours of Operation: </h4>
-      <p>{{ZooShowVM.zoo.hours_of_op}}</p>
-      <h4>Location: </h4>
-      <p>{{ZooShowVM.zoo.location}}</p>
-      <h4>Transportation Info: </h4>
-      <p>{{ZooShowVM.zoo.transpo_info}}</p>
-    </div>
+<div data-ng-controller="ModalController" class="container">
+  <div id="buttonrow">
+    <a href="zoos#/1/mammals" class="btn btn-warning" role="button">Mammals</a>
+    <a href="zoos#/1/reptiles" class="btn btn-success" role="button">Reptiles</a>
+    <!-- Trigger/Open The Modal -->
+    <button data-ng-click="toggleModal()" class="btn btn-primary" id="myBtn">More Info</button>
   </div>
 
+<!-- The Modal -->
+
+  <modal visible="showModal">
+    <h4>Hours of Operation: </h4>
+    <p>{{ZooShowVM.zoo.hours_of_op}}</p>
+    <h4>Location: </h4>
+    <p>{{ZooShowVM.zoo.location}}</p>
+    <h4>Transportation Info: </h4>
+    <p>{{ZooShowVM.zoo.transpo_info}}</p>
+  </modal>
 </div>
-
-<script>
-// Get the modal
-var modal = document.getElementById('myModal');
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
-// Get the <span> element that closes the modal
-var span = document.querySelector(".close");
-
-// When the user clicks on the button, open the modal
-btn.onclick = function() {
-  modal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-      modal.style.display = "none";
-  }
-}
-</script>
 
 <iframe src="//lightwidget.com/widgets/056daca7660f51c39d7c0661c14af743.html" id="lightwidget_056daca766" name="lightwidget_056daca766"  scrolling="no" allowtransparency="true" class="lightwidget-widget"></iframe>
