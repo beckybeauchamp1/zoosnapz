@@ -1,6 +1,7 @@
 //= require angular
 //= require angular-resource
 //= require ui-router
+//= require angular-ui-bootstrap
 //= require zoos/zoos
 //= require reptiles/reptiles
 //= require mammals/mammals
@@ -12,6 +13,7 @@
   angular
   .module("Zoosnapz", [
     "ui.router",
+    "ui.bootstrap",
     "zoos",
     "reptiles",
     "mammals"
