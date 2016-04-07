@@ -5,8 +5,6 @@ class ZoosController < ApplicationController
     end
   end
 
-  def 
-
   def index
     @zoos = Zoo.all
     respond_to do |format|

@@ -19,20 +19,13 @@
   .config([
     "$stateProvider",
     RouterFunction
-  ])
-  .controller("rootController", [
-    rootControllerFunction
   ]);
-
-  function rootControllerFunction(){
-    return {};
-  }
 
   function RouterFunction($stateProvider){
     $stateProvider
     .state("zooIndex", {
       url: "/",
-      template: "I am working"
+      template: "<a data-ui-sref='zooShow({id: 1})'>Click here for Smithsonian National Zoo</a>"
     })
     .state("mammalsIndex", {
       url: "/:id/mammals",
@@ -63,12 +56,6 @@
       templateUrl: "/ng-views/zoo.show.html",
       controller: "ZooShowController",
       controllerAs: "ZooShowVM"
-    })
-    .state("root", {
-      url: "",
-      templateUrl: "/ng-views/zoo.show.html",
-      controller: "rootController",
-      controllerAs: "rootVM"
     });
   }
 })();

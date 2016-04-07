@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-root to: 'zoos#index'
+  root to: redirect('/zoos#/1')
 
   resources :zoos do
     resources :mammals, only: [:index, :new, :create]
