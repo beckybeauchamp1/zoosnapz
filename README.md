@@ -41,11 +41,12 @@ Be sure that you install the latest versions of Ruby and Rails, and then run `$ 
 
 ## Unsolved Problems
 
-* Due to issues with Instagram's API policies, a third-party service was used to embed a widget that allows Instagram images to populate on our zoo show page. As it stands now, the widget can only display images from a single Instagram account, namely `@smithsonianzoo`.
-* In an attempt to keep our code as DRY as possible, we started to create a custom directive for our animal index views, but ran into issues because the link that directs a user to each animal's respective show page is different.
-* Converting the modal from Vanilla JS to AngularJS was difficult.
+- Due to issues with Instagram's API policies, a third-party service was used to embed a widget that allows Instagram images to populate on our zoo show page. As it stands now, the widget can only display images from a single Instagram account, namely `@smithsonianzoo`.
+- In an attempt to keep our code as DRY as possible, we started to create a custom directive for our animal index views, but ran into issues because the link that directs a user to each animal's respective show page is different.
+- Converting the modal from Vanilla JS to AngularJS was difficult: we used code examples from the web and adapted them to our project.
 
 ## Future Plans
 
-* Should policies with Instagram's API change, this app will pull images from Instagram's API to populate view pages with images marked with relevant hashtags and geo-locations.
-* Add more data from other zoos and animals (e.g., birds, amphibians, fish, and invertebrates).
+- Should policies with Instagram's API change, this app will pull images from Instagram's API to populate view pages with images marked with relevant hashtags and geo-locations.
+- Add more data from other zoos and animals (e.g., birds, amphibians, fish, and invertebrates).
+- Convert the nav bar to a custom directive so it can be reused in multiple view states
