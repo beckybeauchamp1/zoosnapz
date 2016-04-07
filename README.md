@@ -6,7 +6,11 @@ ZoosnapZ was designed to provide a more mobile-friendly and user-friendly experi
 
 We wanted to make an app that would bring the focus back to the animals in the various exhibits, without including ancillary information and promotional materials about Zoo events. We envisioned a single landing page with some basic information about the zoo as well as some social content in the form of Instagram posts sorted by geographic location (i.e., at the National Zoo), tag (e.g., #smithsonianzoo or #nationalzoo), or official user account.
 
-The homepage of the app does, in fact, display some information about the National Zoo (hours of operation, location, etc.), and it also includes a navigation bar with links to pages displaying an index of mammals or reptiles. The most prominent feature of the homepage is the Instagram widget, which we initially planned to include via an integration with Instagram's API. In order to facilitate the integration, we acquired a client ID and API  
+The homepage of the app does, in fact, display some information about the National Zoo (hours of operation, location, etc.), and it also includes a navigation bar with links to pages displaying an index of mammals or reptiles. The most prominent feature of the homepage is the Instagram widget, which we initially planned to include via an integration with Instagram's API. In order to facilitate the integration, we acquired a client ID and API access token from Instagram, which required registration on Instagram's developer website.
+
+We successfully implemented the Figaro Gem in Rails to protect our access token from exposure on GitHub, and we began the process of testing the API endpoints that would be utilized by our application. It was at this point that we realized that a policy change at Instagram in 2015 would require us to demonstrate our fully functional application to Instagram in order to receive full access to public data via their API. Given the tight time frame for this project, we elected to utilize a widget called Lightwidget instead of the Instagram API: this allowed us to include posts on our homepage without difficulty.
+
+The mammal and reptile sections of the app are structured similarly, in that they show lists of animals by photo along with a simple search bar to filter results by animal name. The detail pages for each animal include a large amount of content in categories (reproduction, status, diet, etc.), each of which can be expanded by clicking on the associated `+` symbol.
 
 ## Technologies Used
 
@@ -18,3 +22,13 @@ This web application was built using using the following technologies:
 - [Lightwidget] (https://lightwidget.com/) for Instagram integration
 - Ruby on Rails (version 4.2.6) on the back end
 - PostgreSQL as the database
+
+## Installation instructions
+
+*For Users*
+
+Visit the application at [http://zoosnapz.herokuapp.com](http://zoosnapz.herokuapp.com]) and navigate through the app to learn more about your favorite animals.
+
+*For Developers*
+
+Be sure that you install the latest versions of Ruby and Rails, and then run `$ bundle install` from the command line to install all dependencies listed in the `Gemfile`. You will also need to use PostgreSQL as your database; therefore, please make certain that the tell-tale "blue elephant" is running when you open the app.
