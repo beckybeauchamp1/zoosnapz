@@ -1,8 +1,10 @@
-# ZoosnapZ
+# ZoosnapZ – Snapshots of the National Zoo in Washington, DC
 
 ## Overview and Purpose of the Application
 
-ZoosnapZ was designed to provide a more mobile-friendly and user-friendly experience of the data about the various animals at the [Smithsonian National Zoological Park] (https://nationalzoo.si.edu/). We found the user experience on the existing National Zoo website to be somewhat cumbersome, with useful content buried on the third or fourth level of the information architecture (IA) and divided among multiple pages (e.g., reptile fact sheets were separate from the "about" pages for the Zoo's various reptiles).
+[**ZoosnapZ**](http://zoosnapz.herokuapp.com/) is a web application application comprised of an API developed in Ruby on Rails that is connected to a front end built with AngularJS. The [Smithsonian National Zoological Park] (https://nationalzoo.si.edu/) in Washington, DC (commonly known as the National Zoo) hosts a large quantity of information about the 1,800 different species that reside there.
+
+ZoosnapZ was designed to provide a mobile-friendly and user-friendly experience of the data about the various animals at the Zoo. When one visits the Zoo in person, it is challenging to locate informational placards when surrounded by huge crowds of tourists and locals. Unfortunately, the Zoo's website isn't much help either: we found the user experience on the existing site to be somewhat cumbersome, with useful content buried in the third or fourth level of the information architecture (IA) and divided among multiple pages (e.g., reptile fact sheets were separate from the "about" pages for the Zoo's various reptiles). There is a mobile app (iOS and Android) available for $2.00; however, even this small cost may constitute a barrier to entry for many users.
 
 We wanted to make an app that would bring the focus back to the animals in the various exhibits, without including ancillary information and promotional materials about Zoo events. We envisioned a single landing page with some basic information about the zoo as well as some social content in the form of Instagram posts sorted by geographic location (i.e., at the National Zoo), tag (e.g., #smithsonianzoo or #nationalzoo), or official user account.
 
@@ -12,16 +14,20 @@ We successfully implemented the Figaro Gem in Rails to protect our access token 
 
 The mammal and reptile sections of the app are structured similarly, in that they show lists of animals by photo along with a simple search bar to filter results by animal name. The detail pages for each animal include a large amount of content in categories (reproduction, status, diet, etc.), each of which can be expanded by clicking on the associated `+` symbol.
 
+Next time you visit the zoo, check out [**ZoosnapZ**](http://zoosnapz.herokuapp.com/) on your smartphone or tablet to learn more about the Zoo and its animals, and to explore the latest photo and video content!
+
 ## Technologies Used
 
 This web application was built using using the following technologies:
 
-- AngularJS (version 1.5.3) on the front end
+- AngularJS (version 1.5.3), HTMl, and CSS on the front end
   - Angular UI Router and ngResource included as dependencies
 - Bootstrap (version 3.3.6) as well as custom stylesheets
 - [Lightwidget] (https://lightwidget.com/) for Instagram integration
 - Ruby on Rails (version 4.2.6) on the back end
-- PostgreSQL as the database
+  - RESTful API, renders data as JSON
+- PostgreSQL database
+- Hosted on Heroku
 
 ## Installation instructions
 
