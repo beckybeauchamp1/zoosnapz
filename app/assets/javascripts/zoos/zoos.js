@@ -14,18 +14,18 @@
     "$stateParams",
     ZooShowControllerFunction
   ])
+  .controller("ModalController", function ($scope) {
+    $scope.showModal = false;
+    $scope.toggleModal = function(){
+        $scope.showModal = !$scope.showModal;
+    };
+  })
   .directive("animalsShow", function(){
     return {
       templateUrl: "/ng-views/_animals_show.html",
       scope: {
         animal: '='
       }
-    };
-  })
-  .controller("ModalController", function ($scope) {
-    $scope.showModal = false;
-    $scope.toggleModal = function(){
-        $scope.showModal = !$scope.showModal;
     };
   })
   .directive("modal", function () {
@@ -38,7 +38,7 @@
       link: function postLink(scope, element, attrs) {
         scope.title = attrs.title;
         scope.$watch(attrs.visible, function(value){
-          if(value == true)
+          if(value === true)
             $(element).modal('show');
           else
             $(element).modal('hide');
@@ -56,6 +56,7 @@
       }
     };
   });
+
   function ZooFactoryFunction($resource){
     var ZooFactory = $resource("/zoos/:id.json", {}, {
       update: {method: "PUT"}
