@@ -19,7 +19,14 @@
   .config([
     "$stateProvider",
     RouterFunction
+  ])
+  .controller("rootController", [
+    rootControllerFunction
   ]);
+
+  function rootControllerFunction(){
+    return {};
+  }
 
   function RouterFunction($stateProvider){
     $stateProvider
@@ -56,6 +63,12 @@
       templateUrl: "/ng-views/zoo.show.html",
       controller: "ZooShowController",
       controllerAs: "ZooShowVM"
+    })
+    .state("root", {
+      url: "",
+      templateUrl: "/ng-views/zoo.show.html",
+      controller: "rootController",
+      controllerAs: "rootVM"
     });
   }
 })();

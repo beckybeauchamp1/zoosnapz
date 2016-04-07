@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+root to: 'zoos#index'
+
   resources :zoos do
     resources :mammals, only: [:index, :new, :create]
     resources :reptiles, only: [:index, :new, :create]
