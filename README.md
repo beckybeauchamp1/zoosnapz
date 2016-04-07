@@ -37,4 +37,4 @@ Visit the application at [http://zoosnapz.herokuapp.com](http://zoosnapz.herokua
 
 *For Developers*
 
-Be sure that you install the latest versions of Ruby and Rails, and then run `$ bundle install` from the command line to install all dependencies listed in the `Gemfile`. You will also need to use PostgreSQL as your database; therefore, please make certain that the tell-tale "blue elephant" is running when you open the app.
+Be sure that you install the latest versions of Ruby and Rails, and then run `$ bundle install` from the command line to install all dependencies listed in the `Gemfile`. You will also need to use PostgreSQL as your database; therefore, please make certain that the tell-tale "blue elephant" is running when you open the app. Please note that the Lightwidget Instagram widget will not work with `https`; you must use `http` instead.
