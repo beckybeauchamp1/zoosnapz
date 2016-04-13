@@ -13,7 +13,7 @@
 
 
 # Beause you have so many similar characterists/columns for both reptiles and mammals, I might another table called attributes
-# Then a Mammal has many :attributes, a Reptile has_many :attributes, and then Attribute belongs_to :mammal, belongs_to :
+# Then a Mammal has many :attributes, a Reptile has_many :attributes, and then Attribute belongs_to :mammal, belongs_to :reptile
 
 ActiveRecord::Schema.define(version: 20160404153842) do
 
