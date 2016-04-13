@@ -11,6 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+
+# Beause you have so many similar characterists/columns for both reptiles and mammals, I might another table called attributes
+# Then a Mammal has many :attributes, a Reptile has_many :attributes, and then Attribute belongs_to :mammal, belongs_to :
+
 ActiveRecord::Schema.define(version: 20160404153842) do
 
   # These are extensions that must be enabled in order to support this database

@@ -34,6 +34,7 @@
   }
 
   function MammalShowControllerFunction(MammalFactory, $stateParams){
+    // Same here, maybe using :MamalFactory.get({id: $stateParams.id}) ?
     var MammalShowVM = this;
     MammalFactory.all.$promise.then(function(){
       MammalFactory.all.forEach(function(mammal){

@@ -20,6 +20,7 @@
         $scope.showModal = !$scope.showModal;
     };
   })
+  // Great job implementing two custom directives
   .directive("animalsShow", function(){
     return {
       templateUrl: "/ng-views/_animals_show.html",
@@ -65,6 +66,8 @@
     return ZooFactory;
   }
   function ZooShowControllerFunction(ZooFactory, $stateParams){
+    // Could you think of another way to accomplish this for show?
+    // Maybe using ZooFactory.get({id: $stateParams.id}) ?
     var ZooShowVM = this;
     ZooFactory.all.$promise.then(function(){
       ZooFactory.all.forEach(function(zoo){

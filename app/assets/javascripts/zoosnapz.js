@@ -8,6 +8,7 @@
 //= require lightwidget
 
 "use strict";
+// Great job here, everything is so clean and organized :)
 
 (function(){
   angular

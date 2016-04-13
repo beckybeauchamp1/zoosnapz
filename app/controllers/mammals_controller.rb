@@ -1,4 +1,5 @@
 class MammalsController < ApplicationController
+  # Nice job keeping your controller skinny
   before_action do
     if params[:id]
       @mammal = Mammal.find(params[:id])

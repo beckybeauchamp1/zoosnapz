@@ -1,3 +1,4 @@
+<!-- This is so amazing for documentation, awesome job! -->
 # ZoosnapZ – Snapshots of the National Zoo in Washington, DC
 
 ## Overview and Purpose of the Application

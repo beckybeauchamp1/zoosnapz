@@ -1,4 +1,5 @@
 class ZoosController < ApplicationController
+  # Awesome job with all of your controllers, keeping them clean and "skinny"
   before_action do
     if params[:id]
       @zoo = Zoo.find(params[:id])
